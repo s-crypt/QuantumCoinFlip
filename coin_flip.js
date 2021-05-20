@@ -20,13 +20,13 @@ const coinFlip = async () => {
 	if (result <= 127) {
 		document.getElementById("coin").src = "images/heads.png";
 		winner = `HEADS`;
-    console.log('Heads');
+		console.log("Heads");
 		head_win = heads_wins.push(1);
 		document.getElementById("head_win").innerText = head_win;
 	} else if (result >= 128) {
 		document.getElementById("coin").src = "images/tails.png";
 		winner = `TAILS`;
-    console.log('Tails');
+		console.log("Tails");
 		tail_win = `${tails_wins.push(2)}`;
 		document.getElementById("tail_win").innerText = tail_win;
 	}
