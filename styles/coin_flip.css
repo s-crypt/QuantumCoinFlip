@@ -96,6 +96,7 @@ ul {
 }
 
 input:active{
+  transition: transform .5s ease-in-out;
   transform: rotateX(1800deg) scale(4);
 }
 

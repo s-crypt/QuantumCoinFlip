@@ -21,15 +21,17 @@
       </ul>
     </div>
     <h1> Flip a Quantum Coin! </h1>
-    <center><h3> Click the coin to flip </h3></center>
+    <center><h3> Click and hold for a second to flip the coin</h3></center>
     <input id="coin" type="image" src="images/heads.png" onclick="coinFlip(); play();"/>
     <h1 id="winner"></h1>
     <h1 id="final_winner"></h1>
     
     <div style="position: absolute; bottom: 5px;">
-    <p>API provided by <a href="https://qrng.anu.edu.au">Austrailian National University</a> and their Quantum Lab</p>
+    <p>API provided by <a href="https://qrng.anu.edu.au">Australian National University</a> and their Quantum Lab</p>
     <p>99.9% of website code by <a href="https://github.com/macro6461/coin-flip">Matthew Croak</a></p>
     <p>The few lines that are modified are by me, <a href="https://github.com/s-crypt">s-crypt</a></p>
+    <p>From 0-255 given by the Quantum Random Number Generator: 0-127 is Heads, 128-255 is Tails</p>
+    <p>Don't believe the results? Open the browser console.</p>
     </div>
     <audio id="audio" src="coin_toss.mp3"></audio>
     <script src="coin_flip.js"></script>
