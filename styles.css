@@ -1,14 +1,14 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: 
+    url('../fonts/ubuntu-v15-latin-regular.woff2') format('woff2');
+  }
+
 body{
-  @font-face {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    src: 
-      url('fonts/ubuntu-v15-latin-regular.woff2') format('woff2');
-    }
+  font-family: 'Ubuntu', sans-serif;
 }
-
-
 
 h1{
   font-size: 4vw;
