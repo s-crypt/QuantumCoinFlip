@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coin Flip!</title>
+    <meta charset="utf-8">
+    <link href="styles/coin_flip.css" type="text/css" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/jpg" href="./images/heads.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  </head>
+  <body>
+    <div id= "damn"></div>
+    <div id="score_box">
+      <p id="tally">Tally</p>
+      <ul>
+        <li> Heads: </li>
+        <li id="head_win"></li>
+      </ul>
+      <ul>
+        <li> Tails: </li>
+        <li id="tail_win"></li>
+      </ul>
+    </div>
+    <h1> Flip a Quantum Coin! </h1>
+    <center><h3> Click the coin to flip </h3></center>
+    <input id="coin" type="image" src="images/heads.png" onclick="coinFlip(); play();"/>
+    <h1 id="winner"></h1>
+    <h1 id="final_winner"></h1>
+    
+    <div style="position: absolute; bottom: 5px;">
+    <p>API provided by <a href="https://qrng.anu.edu.au">Austrailian National University</a> and their Quantum Lab</p>
+    <p>99.9% of website code by <a href="https://github.com/macro6461/coin-flip">Matthew Croak</a></p>
+    <p>The few lines that are modified are by me, <a href="https://github.com/s-crypt">s-crypt</a></p>
+    </div>
+    <audio id="audio" src="coin_toss.mp3"></audio>
+    <script src="coin_flip.js"></script>
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a7e4d039ab4244089a1d62fd912a8ae7"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+  </body>
+</html>
