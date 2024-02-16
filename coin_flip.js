@@ -1,22 +1,23 @@
-var heads_wins = [];
-var tails_wins = [];
+let heads_wins = [];
+let tails_wins = [];
 
 function play() {
-	var audio = document.getElementById("audio");
+	let audio = document.getElementById("audio");
 	audio.play();
 }
 
 const flip = async () => {
-	var qrn;
-	const response = await fetch("https://qrng.anu.edu.au/API/jsonI.php?length=1&type=uint8&size=1");
-	const data = await response.json();
-	qrn = data.data[0];
-	console.log(data.data[0]);
+	let qrn;
+	const response = await fetch("https://www.random.org/integers/?num=1&min=0&max=255&col=1&base=10&format=plain&rnd=new")
+		.then(data => data.text())
+	const data = response;
+	qrn = data;
+	console.log(data);
 	return qrn;
 };
 
 const coinFlip = async () => {
-	var result = await flip();
+	let result = await flip();
 	if (result <= 127) {
 		document.getElementById("coin").src = "images/heads.png";
 		winner = `HEADS`;
